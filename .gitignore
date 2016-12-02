@@ -2,6 +2,7 @@
 out/
 *.ipr
 *.iws
+wpm/
 classpath.txt
 version.properties
 !modules/swagger-codegen-cli/src/main/resources/version.properties
