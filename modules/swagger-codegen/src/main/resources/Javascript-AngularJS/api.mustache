@@ -68,7 +68,7 @@
 				{{#allParams}}
 				{{#required}}
 				  // verify required parameter '{{^required}}opt_{{/required}}{{paramName}}' is set
-				  if (!{{^required}}opt_{{/required}}{{paramName}}) {
+				  if (typeof {{^required}}opt_{{/required}}{{paramName}} === 'undefined' || {{^required}}opt_{{/required}}{{paramName}} === null) {
 				    throw new Error('Parameter {{^required}}opt_{{/required}}{{paramName}} is required');
 				  }
 				{{/required}}
